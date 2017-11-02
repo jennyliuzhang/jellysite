@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jellysite</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    	body { background: #b2afa8;}
+    	#editor {
+    		position: absolute;
+    		top: 60px; left: 20px;
+    		width: 300px;
+    		padding: 30px;
+    		background: #314341;
+    		color: #fff;
+    		font: normal 1.2em/2em "Space Mono", monospace;
+    	}
+
+    		#editor a {
+    			padding: 0 4px;
+    			color: #fff;
+    			text-decoration: none;
+    		}
+
+    		#editor a:hover {
+    			color: #314341;
+    			background: #fff;
+    		}
+
+    		h2 {
+    			margin: 0; 
+    			font: 300 1em/1em "Space Mono", monospace;
+    		}
+
+    		form { margin: 0 0 20px; }
+
+    	#website {
+    		position: absolute;
+    		top: 60px; left: 420px;
+    		width: 320px; height: 480px;
+    		background: white;
+    	}
+    </style>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+		$( document ).ready(function() {
+
+			// newContainer
+		    $( "#newContainer" ).submit(function() {
+		    	jQuery('<div/>', {
+				    id: $('#newContainerName').val(),
+				    text: 'hfaskl help me plz SOSOOS'
+				}).appendTo('#website');
+				
+			});
+		});
+    </script>
+
+  </head>
+  <body>
+
+  	<div id="editor">
+  		<h2>New Container</h2>
+  		<form action="" id="newContainer">
+  			<input type="text" name="newContainerName" id="newContainerName" placeholder="Name of container">
+  			<input type="submit">
+  		</form>
+  	</div>
+
+  	<div id="website">
+  		
+  	</div>
+
+  </body>
+</html>

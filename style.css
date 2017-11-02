@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Helvetica', sans-serif;
+	color: #322a27;
+}
+
+#top {
+	position: relative;
+	margin: 20px auto;
+	padding: 0 20px;
+	z-index: 100;
+}
+
+	nav {
+		display: table;
+		margin: 20px auto;
+		width: 100%;
+		height: 40px;
+		min-width: 300px;
+		max-width: 540px;
+		background: url('bg.jpg');
+		background-size: 360px auto;
+		border: 1px solid #38302d;
+	}
+
+	nav a {
+		display: table-cell;
+		vertical-align: middle;
+		width: 24%;
+		font: normal 1.15em 'Georgia', serif;
+		text-decoration: none;
+		color: #38302d;
+		border-right: 1px solid #38302d;
+	}
+
+		nav a:hover, nav .active {
+			color: #fff;
+			background: #38302d;
+		}
+
+.slide {
+	position: relative;
+	width: 100%;
+	height: 54vh;
+	padding: 10px 13px 10px 10px;
+	border: 1px solid #38302d;
+	border-right: none;
+	border-left: none;
+}
+
+#wrap {
+	margin: 30px auto;
+	padding: 0 30px;
+	max-width: 720px;
+	font: normal 1em/1.8em 'Georgia', serif;
+}
+
+h1 {
+	font: bold 2.5em/1.5em 'Helvetica', sans-serif;
+}
+
+h2 {
+	font: normal 1.5em/1.2em 'Helvetica', sans-serif;
+}
+
+/* MID SCREENS */
+      @media screen 
+        and (min-device-width: 600px) 
+        and (min-width: 600px) {
+
+
+
+        }
